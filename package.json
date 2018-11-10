@@ -1,0 +1,22 @@
+{
+  "name": "outdoors",
+  "version": "1.0.0",
+  "description": "Landing page for outdoors",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./saas/main.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shomail/outdoors.git"
+  },
+  "author": "shomail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shomail/outdoors/issues"
+  },
+  "homepage": "https://github.com/shomail/outdoors#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
