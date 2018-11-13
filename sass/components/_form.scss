@@ -1,5 +1,4 @@
 .form {
-
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -14,8 +13,13 @@
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
-    display: block; 
+    display: block;
     transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
 
     &:focus {
       outline: none;
@@ -32,13 +36,11 @@
     }
   }
 
-  
-
   &__label {
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 2rem;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     display: block;
     transition: all 0.2s;
   }
@@ -52,6 +54,11 @@
   &__radio-group {
     width: 45%;
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {
@@ -73,10 +80,10 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    top: -.5rem; 
+    top: -0.5rem;
 
     &::after {
-      content: ""; 
+      content: '';
       display: block;
       height: 1.3rem;
       width: 1.3rem;
