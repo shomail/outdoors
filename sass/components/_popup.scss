@@ -33,6 +33,10 @@
     width: 33.333333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__img {
@@ -47,6 +51,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__text {
@@ -58,6 +67,10 @@
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 
   &:target {
